@@ -9,6 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-color: rgb(0, 115, 115);
 
 }
 ul{
@@ -18,7 +19,7 @@ ul{
 ul li{
     display: block;
     position: relative;
-    
+    width: 300px;
     padding: 20px;
     background-color:rgb(2, 32, 59);
     text-transform: uppercase;
@@ -57,7 +58,7 @@ ul li::after{
     transform: skewX(45deg);
 }
 ul li:hover::after{
-    background-color:rgb(0, 123, 123) ;
+    background-color:rgb(0, 145, 145) ;
 }
 ul li a {
     display: block;
@@ -68,4 +69,7 @@ ul li a {
 
 ul li:hover a{
     color:rgb(0, 0, 0) ;
+}
+ul li:last-child::after{
+    box-shadow: -100px 150px 20px rgba(0, 0, 0, 0.559);
 }
